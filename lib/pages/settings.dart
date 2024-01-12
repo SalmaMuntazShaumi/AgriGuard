@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_colors.dart';
+
 class SettingsPage extends StatefulWidget {
   const SettingsPage({Key? key}) : super(key: key);
 
@@ -11,7 +13,8 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      backgroundColor: AppColors.primaryBackgroundColor,
+      body: const Center(
         child: Text('Ini Page Settings'),
       ),
     );
