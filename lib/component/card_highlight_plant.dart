@@ -16,7 +16,7 @@ class _CardHighlightPlantState extends State<CardHighlightPlant> {
       padding: EdgeInsets.all(12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: Colors.white
+        color: AppColors.primaryWhiteColor
       ),
       child: Column(
         children: [

@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
 
-import '../component/custom_field_email.dart';
-import '../component/custom_field_password.dart';
-import '../component/tab_bar.dart';
-import '../theme/app_colors.dart';
-import '../theme/app_text_styles.dart';
+import '../../component/custom_field_email.dart';
+import '../../component/custom_field_password.dart';
+import '../../theme/app_colors.dart';
+import '../../theme/app_text_styles.dart';
 
-class RegisSection extends StatefulWidget {
-  const RegisSection({Key? key}) : super(key: key);
+class LoginSection extends StatefulWidget {
+  const LoginSection({Key? key}) : super(key: key);
 
   @override
-  State<RegisSection> createState() => _RegisSectionState();
+  State<LoginSection> createState() => _LoginSectionState();
 }
 
-class _RegisSectionState extends State<RegisSection> {
-  TextEditingController textFieldControllerUsername = TextEditingController();
+class _LoginSectionState extends State<LoginSection> {
   TextEditingController textFieldControllerEmail = TextEditingController();
   TextEditingController textFieldControllerPassword = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 500,
       width: MediaQuery.of(context).size.width,
+      height: 400,
       decoration: BoxDecoration(
           color: AppColors.primaryWhiteColor,
           borderRadius: BorderRadius.circular(12)),
@@ -29,11 +28,6 @@ class _RegisSectionState extends State<RegisSection> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomTextField(
-              hintText: 'Masukkan nama pengguna',
-              controller: textFieldControllerUsername,
-              label: 'Username'),
-          const SizedBox(height: 12),
           CustomTextField(
               hintText: 'Masukkan email yang terdaftar',
               controller: textFieldControllerEmail,
@@ -43,11 +37,28 @@ class _RegisSectionState extends State<RegisSection> {
               hintText: 'Masukkan password',
               controller: textFieldControllerPassword,
               label: 'Password'),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
+          Row(
+            children: [
+              Text('Lupa Password?',
+                  style: AppTextStyle.appTitlew500s12(
+                      color: AppColors.primaryGreyColor)),
+              const SizedBox(width: 4),
+              GestureDetector(
+                onTap: () {},
+                child: Text(
+                  'Klik disini untuk riset password',
+                  style: AppTextStyle.appTitlew500s12(
+                      color: AppColors.primaryBlackColor),
+                ),
+              )
+            ],
+          ),
+          const SizedBox(height: 32),
           GestureDetector(
             onTap: () {
-              Navigator.pushReplacement(context,
-                  MaterialPageRoute(builder: (context) => const TabBarLoginRegis()));
+              Navigator.popAndPushNamed(
+                  context, '/dashboard');
             },
             child: Container(
               height: 50,
@@ -57,7 +68,7 @@ class _RegisSectionState extends State<RegisSection> {
                   borderRadius: BorderRadius.circular(100)),
               child: Center(
                 child: Text(
-                  'Daftar',
+                  'Masuk',
                   style: AppTextStyle.appTitlew600s16(
                       color: AppColors.primaryWhiteColor),
                 ),

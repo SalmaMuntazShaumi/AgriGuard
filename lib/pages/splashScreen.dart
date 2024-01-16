@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:agri_guard/bottom_navbar.dart';
 import 'package:agri_guard/component/tab_bar.dart';
 import 'package:agri_guard/pages/dashboard.dart';
-import 'package:agri_guard/pages/login.dart';
+import 'package:agri_guard/pages/section/login.dart';
 import 'package:agri_guard/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

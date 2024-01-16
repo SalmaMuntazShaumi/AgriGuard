@@ -1,6 +1,6 @@
 import 'package:agri_guard/bottom_navbar.dart';
-import 'package:agri_guard/pages/login.dart';
-import 'package:agri_guard/pages/regis.dart';
+import 'package:agri_guard/pages/section/login.dart';
+import 'package:agri_guard/pages/section/regis.dart';
 import 'package:agri_guard/pages/splashScreen.dart';
 import 'package:agri_guard/theme/app_colors.dart';
 import 'package:flutter/material.dart';
