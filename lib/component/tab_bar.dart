@@ -1,7 +1,7 @@
 import 'package:agri_guard/component/custom_field_password.dart';
 import 'package:agri_guard/component/tab_bar.dart';
-import 'package:agri_guard/pages/login.dart';
-import 'package:agri_guard/pages/regis.dart';
+import 'package:agri_guard/pages/section/login.dart';
+import 'package:agri_guard/pages/section/regis.dart';
 import 'package:agri_guard/theme/app_colors.dart';
 import 'package:agri_guard/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
