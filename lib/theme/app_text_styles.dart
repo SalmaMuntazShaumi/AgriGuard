@@ -11,6 +11,10 @@ class AppTextStyle {
     return GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w700, color: color);
   }
 
+  static appTitlew700s16({Color? color}) {
+    return GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w700, color: color);
+  }
+
   static appTitlew400s18({Color? color}) {
     return GoogleFonts.poppins(
         fontSize: 18, fontWeight: FontWeight.w400, color: color);
@@ -74,6 +78,11 @@ class AppTextStyle {
   static appTitlew700s18({Color? color}) {
     return GoogleFonts.poppins(
         fontSize: 18, fontWeight: FontWeight.w700, color: color);
+  }
+
+  static appTitlew700s20({Color? color}) {
+    return GoogleFonts.poppins(
+        fontSize: 20, fontWeight: FontWeight.w700, color: color);
   }
 
   static appTitlew600s14({Color? color}) {
