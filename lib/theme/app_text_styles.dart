@@ -8,7 +8,11 @@ class AppTextStyle {
   }
 
   static appTitlew700s14({Color? color}) {
-    return GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w700);
+    return GoogleFonts.poppins(fontSize: 14, fontWeight: FontWeight.w700, color: color);
+  }
+
+  static appTitlew700s16({Color? color}) {
+    return GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w700, color: color);
   }
 
   static appTitlew400s18({Color? color}) {
@@ -18,12 +22,12 @@ class AppTextStyle {
 
   static appTitlew400s12h13({Color? color}) {
     return GoogleFonts.poppins(
-        fontSize: 12, fontWeight: FontWeight.w400, height: 1.3);
+        fontSize: 12, fontWeight: FontWeight.w400, height: 1.3, color: color);
   }
 
   static appTitlew400s12h12({Color? color}) {
     return GoogleFonts.poppins(
-        fontSize: 12, fontWeight: FontWeight.w400, height: 1.6);
+        fontSize: 12, fontWeight: FontWeight.w400, height: 1.6, color: color);
   }
 
   static appTitlew500s12({Color? color}) {
@@ -32,15 +36,15 @@ class AppTextStyle {
   }
 
   static appTitlew800s18({Color? color}) {
-    return GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 18);
+    return GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 18, color: color);
   }
 
   static appTitlew700s10({Color? color, double? height}) {
-    return GoogleFonts.poppins(fontSize: 10, fontWeight: FontWeight.w700, height: height);
+    return GoogleFonts.poppins(fontSize: 10, fontWeight: FontWeight.w700, height: height, color: color);
   }
 
   static appTitlew700s12({Color? color, double? height}) {
-    return GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w700, height: height);
+    return GoogleFonts.poppins(fontSize: 12, fontWeight: FontWeight.w700, height: height, color: color);
   }
 
   static appTitlew400s13({Color? color}) {
@@ -54,11 +58,11 @@ class AppTextStyle {
   }
 
   static appTitlew600s16({Color? color}) {
-    return GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600);
+    return GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600, color: color);
   }
 
   static appTitlew500s16({Color? color}) {
-    return GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w500);
+    return GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w500, color: color);
   }
 
   static appTitlew600s12({Color? color}) {
@@ -74,6 +78,11 @@ class AppTextStyle {
   static appTitlew700s18({Color? color}) {
     return GoogleFonts.poppins(
         fontSize: 18, fontWeight: FontWeight.w700, color: color);
+  }
+
+  static appTitlew700s20({Color? color}) {
+    return GoogleFonts.poppins(
+        fontSize: 20, fontWeight: FontWeight.w700, color: color);
   }
 
   static appTitlew600s14({Color? color}) {
@@ -124,6 +133,13 @@ class AppTextStyle {
       color: color,
     );
   }
+  static appTitlew800s14({Color? color}) {
+    return GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w800,
+      color: color,
+    );
+  }
 
   static appTitlew500s14({Color? color}) {
     return GoogleFonts.poppins(
@@ -133,6 +149,13 @@ class AppTextStyle {
   static appTitlew400s9({Color? color}) {
     return GoogleFonts.poppins(
       fontSize: 9,
+      fontWeight: FontWeight.w400,
+      color: color,
+    );
+  }
+  static appTitlew400s14({Color? color}) {
+    return GoogleFonts.poppins(
+      fontSize: 14,
       fontWeight: FontWeight.w400,
       color: color,
     );
